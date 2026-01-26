@@ -1,0 +1,5 @@
+{
+  "name": "NammaMart",
+  "description": "A comprehensive real-world MERN stack e-commerce platform for Indian groceries, featuring admin controls, Razorpay integration, and a responsive modern design.",
+  "requestFramePermissions": []
+}

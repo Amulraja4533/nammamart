@@ -4,7 +4,7 @@ import * as ReactRouterDom from 'react-router-dom';
 // Fix: Use module-level destructuring to bypass environment-specific named export issues in react-router-dom
 const { Link } = ReactRouterDom as any;
 import { LayoutGrid, Package, ListOrdered, Users, TrendingUp, ChevronRight, Loader2, XCircle, CheckCircle2, Clock, QrCode, Upload, Save, Truck, CloudRain } from 'lucide-react';
-import { productService, orderService, authService, settingsService, uploadService } from '../../services/api';
+import { productService, orderService, authService, settingsService, uploadService, BASE_IMAGE_URL } from '../../services/api';
 import { Product, Order, User } from '../../types';
 
 const AdminDashboard: React.FC = () => {
@@ -230,8 +230,8 @@ const AdminDashboard: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center gap-8">
               <div className="w-48 h-48 bg-gray-50 rounded-3xl border-2 border-dashed border-gray-200 flex items-center justify-center overflow-hidden">
                 {qrCodePath ? (
-                <img src={`${import.meta.env.VITE_API_URL}${qrCodePath}`} alt="QR Code" className="w-full h-full object-contain" />
-
+                  // Fix: Use BASE_IMAGE_URL instead of import.meta.env to avoid TypeScript errors and ensure consistency
+                  <img src={`${BASE_IMAGE_URL}${qrCodePath}`} alt="QR Code" className="w-full h-full object-contain" />
                 ) : (
                   <QrCode size={48} className="text-gray-200" />
                 )}

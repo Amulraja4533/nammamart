@@ -96,7 +96,7 @@ router.post('/', protect, admin, (req, res) => {
      * SUCCESS: Return the relative public path.
      * The Express server serves the /backend/uploads folder statically at the /uploads route.
      */
-    res.send(`/uploads/${req.file.filename}`);
+   res.send(`${process.env.BASE_URL}/uploads/${req.file.filename}`);
   });
 });
 

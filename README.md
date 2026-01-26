@@ -71,3 +71,6 @@ nammamart/
 1. **Database**: Create a cluster on MongoDB Atlas and get the URI.
 2. **Backend**: Host on Render. Add all Environment Variables. Connect the Github repo.
 3. **Frontend**: Host on Vercel. Set `VITE_API_URL` to the Render URL.
+
+# nammamart
+NammaMart - A Full-stack MERN grocery e -commerce application with admin and customer roles.

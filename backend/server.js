@@ -33,7 +33,17 @@ const app = express();
 /**
  * Standard Middlewares
  */
-app.use(cors()); // Enable Cross-Origin Resource Sharing
+app.use(
+  cors({
+    origin: [
+      'https://nammamart.vercel.app',
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  })
+);
+ // Enable Cross-Origin Resource Sharing
 app.use(express.json()); // Body parser for JSON data
 
 /**

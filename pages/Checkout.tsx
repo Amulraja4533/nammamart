@@ -6,7 +6,7 @@ const { useNavigate } = ReactRouterDom as any;
 import { Truck, CreditCard, ShoppingBag, MapPin, CheckCircle, ArrowRight, Loader2, Phone, QrCode, CloudRain } from 'lucide-react';
 import { useCart } from '../contexts/CartContext';
 import { useAuth } from '../contexts/AuthContext';
-import { orderService, paymentService, authService, settingsService, BASE_IMAGE_URL} from '../services/api';
+import { orderService, paymentService, authService, settingsService} from '../services/api';
 
 const Checkout: React.FC = () => {
   const navigate = useNavigate();
@@ -395,7 +395,7 @@ const Checkout: React.FC = () => {
                 {cart.map(item => (
                   <div key={item._id} className="flex items-center space-x-4">
                     <img 
-                      src={item.image.startsWith('http') ? item.image : `${BASE_IMAGE_URL}${item.image}`} 
+                      src={item.image.startsWith('http') ? item.image : `http://localhost:5000${item.image}`}
                       alt={item.name} 
                       className="w-12 h-12 rounded-xl object-cover shrink-0 bg-gray-50" 
                     />

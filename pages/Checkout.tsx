@@ -6,7 +6,7 @@ const { useNavigate } = ReactRouterDom as any;
 import { Truck, CreditCard, ShoppingBag, MapPin, CheckCircle, ArrowRight, Loader2, Phone, QrCode, CloudRain } from 'lucide-react';
 import { useCart } from '../contexts/CartContext';
 import { useAuth } from '../contexts/AuthContext';
-import { orderService, paymentService, authService, settingsService } from '../services/api';
+import { orderService, paymentService, authService, settingsService, BASE_IMAGE_URL} from '../services/api';
 
 const Checkout: React.FC = () => {
   const navigate = useNavigate();

@@ -342,7 +342,7 @@ const Checkout: React.FC = () => {
                        <h4 className="font-black text-orange-700 mb-4 uppercase tracking-widest text-xs">Payment QR Code</h4>
                        {adminQr ? (
                          <div className="max-w-[200px] mx-auto mb-6 bg-white p-4 rounded-2xl shadow-sm border border-orange-200">
-                          <img src={`${BASE_IMAGE_URL}${qrCodePath}`} alt="Payment QR" className="w-full h-full object-contain" />
+                          <img src={`${import.meta.env.VITE_API_URL}${qrCodePath}`} alt="Payment QR" className="w-full h-full object-contain" />
                          </div>
                        ) : (
                          <div className="py-10 text-orange-300 font-bold italic">QR code not configured by store</div>

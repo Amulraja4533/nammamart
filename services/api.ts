@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_URL = 'https://nammamart-backend.onrender.com/api';
 
-export BASE_IMAGE_URL='https://nammamart-backend.onrender.com';
+export const BASE_IMAGE_URL='https://nammamart-backend.onrender.com';
 
 const api = axios.create({
   baseURL: API_URL,

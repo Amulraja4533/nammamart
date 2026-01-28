@@ -50,7 +50,7 @@ const ProductDetail: React.FC = () => {
   };
 
   const getUnitLabel = (category: string) => {
-    const kgCategories = ['Vegetables', 'Fruits', 'Nuts & Dry Fruits'];
+    const kgCategories = ['Vegetables', 'Fruits','Snacks' 'Nuts & Dry Fruits'];
     return kgCategories.includes(category) ? '/ Kg' : '/ Unit';
   };
 

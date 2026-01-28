@@ -49,7 +49,7 @@ const Cart: React.FC = () => {
               <div key={item._id} className="bg-white p-6 md:p-8 rounded-[40px] border border-gray-100 shadow-sm flex items-center gap-6 group hover:shadow-xl transition-all">
                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-3xl overflow-hidden bg-gray-50 shrink-0 border border-gray-50">
                   <img 
-                    src={item.image.startsWith('http') ? item.image : `https://nammamart-backend.onrender.com${item.image}`} 
+                    src={item.image.startsWith('http') ? item.image : `${import.meta.env.VITE_API_URL}${item.image}`} 
                     alt={item.name} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                   />

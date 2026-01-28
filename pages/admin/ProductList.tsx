@@ -118,7 +118,7 @@ const ProductList: React.FC = () => {
                     <td className="px-8 py-6">
                       <div className="flex items-center space-x-4">
                         <img 
-                          src={product.image.startsWith('http') ? product.image : ` https://nammamart-backend.onrender.com${product.image}`} 
+                          src={product.image.startsWith('http') ? product.image : `${import.meta.env.VITE_API_URL}${product.image}`} 
                           alt={product.name} 
                           className="w-12 h-12 rounded-xl object-cover"
                         />

@@ -20,19 +20,19 @@ const SHOP_CATEGORIES = [
   },
   { 
     name: 'Fruits', 
-    img: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=400' 
+    img: 'https://img.freepik.com/free-photo/top-view-composition-delicious-autumn-fruits_23-2148634414.jpg?semt=ais_hybrid&w=740&q=80' 
   },
   { 
     name: 'Snacks', 
-    img: 'https://images.unsplash.com/photo-1599490659223-e1539e76926a?auto=format&fit=crop&q=80&w=400' 
+    img: 'https://www.kindpng.com/picc/m/99-993678_pepsico-all-snacks-transparent-hd-png-download.png' 
   },
   { 
     name: 'Nuts & Dry Fruits', 
-    img: 'https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?auto=format&fit=crop&q=80&w=400' 
+    img: 'https://media.istockphoto.com/id/183803376/photo/mixed-nuts-and-dried-fruits.jpg?s=612x612&w=0&k=20&c=C7BlDHRlNQMTCMrAWcCg59PaA18bAuGXVcU0estWhGY=' 
   },
   { 
     name: 'Dairy', 
-    img: 'https://images.unsplash.com/photo-1528750955925-53f5882bf72f?auto=format&fit=crop&q=80&w=400' 
+    img: 'https://media.istockphoto.com/id/910881428/photo/dairy-products-shot-on-rustic-wooden-table.jpg?s=612x612&w=0&k=20&c=Xh_dDL7XsV0Rff_aIrLOQJ1ZoapugiatmXUxWdo7q2s=' 
   },
   { 
     name: 'Grocery Essentials', 

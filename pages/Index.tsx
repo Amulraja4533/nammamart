@@ -16,7 +16,7 @@ import ProductCard from '../components/products/ProductCard';
 const SHOP_CATEGORIES = [
   { 
     name: 'Vegetables', 
-    img: 'https://images.unsplash.com/photo-1597362868469-355a2979bd6c?auto=format&fit=crop&q=80&w=400' 
+    img: 'https://media.istockphoto.com/id/1448794844/photo/fresh-vegetables-for-sale-on-market-stall.jpg?b=1&s=612x612&w=0&k=20&c=MxGrPZFNIRLeBg82lS20K7ehJXxfcKoOkpmGQFsi228=' 
   },
   { 
     name: 'Fruits', 

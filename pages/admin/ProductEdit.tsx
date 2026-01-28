@@ -198,7 +198,7 @@ const ProductEdit: React.FC = () => {
                 <div className="w-40 h-40 bg-gray-100 rounded-[32px] overflow-hidden flex items-center justify-center border-2 border-dashed border-gray-200">
                   {formData.image ? (
                     <img 
-                      src={formData.image.startsWith('http') ? formData.image : ` https://nammamart-backend.onrender.com${formData.image}`} 
+                      src={formData.image.startsWith('http') ? formData.image : ` ${import.meta.env.VITE_API_URL}${formData.image}`} 
                       alt="Preview" 
                       className="w-full h-full object-cover"
                     />

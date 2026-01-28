@@ -13,13 +13,13 @@ nammamart/
 │   ├── uploads/           # Product images
 │   └── server.js          # Entry point
 └── frontend/               # React (Vite) Application
-    ├── public/
-    ├── src/
-    │   ├── components/    # Reusable UI parts
-    │   ├── contexts/      # Auth & Cart State
-    │   ├── pages/         # View components
-    │   ├── services/      # Axios API calls
-    │   └── App.tsx        # Routing & Main logic
+├── public/
+├── src/
+│   ├── components/    # Reusable UI parts
+│   ├── contexts/      # Auth & Cart State
+│   ├── pages/         # View components
+│   ├── services/      # Axios API calls
+│   └── App.tsx        # Routing & Main logic
 ```
 
 ## 2. Required Libraries & Install Commands

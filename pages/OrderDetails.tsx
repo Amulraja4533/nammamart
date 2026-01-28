@@ -253,7 +253,7 @@ const OrderDetails: React.FC = () => {
                 {order.orderItems.map((item: any, idx: number) => (
                   <div key={idx} className="py-6 flex items-center space-x-6">
                     <img 
-                      src={item.image.startsWith('http') ? item.image : `http://127.0.0.1:5000${item.image}`} 
+                      src={item.image.startsWith('http') ? item.image : `https://nammamart-backend.onrender.com${item.image}`} 
                       className="w-20 h-20 rounded-2xl object-cover shrink-0 bg-gray-50"
                       alt={item.name}
                     />

@@ -62,11 +62,9 @@ const MyOrders: React.FC = () => {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="flex items-center space-x-6">
                   <div className="w-20 h-20 rounded-2xl bg-gray-50 overflow-hidden flex-shrink-0">
-                    <img 
-                      src={order.orderItems[0].image.startsWith('http') ? order.orderItems[0].image : https://nammamart-backend.onrender.com${order.orderItems[0].image}`} 
-                      className="w-full h-full object-cover" 
-                      alt="Product"
-                    />
+                  
+                    <img src={order.orderItems[0].image.startsWith('http') ? order.orderItems[0].image : `https://nammamart-backend.onrender.com${order.orderItems[0].image}`} className="w-full h-full object-cover" alt="Product" />
+                    
                   </div>
                   <div>
                     <h3 className="text-xl font-black text-gray-900 mb-1 group-hover:text-green-600 transition-colors">

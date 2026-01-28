@@ -36,7 +36,7 @@ const SHOP_CATEGORIES = [
   },
   { 
     name: 'Grocery Essentials', 
-    img: 'https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&q=80&w=400' 
+    img: 'https://www.kindpng.com/picc/m/241-2413612_grocery-png-image-high-quality-indian-grocery-transparent.png' 
   },
 ];
 
